@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horses Racing Game</title>
+    <link rel="stylesheet" href="horsesGame.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="mainDiv">
+        <div>
+            <h1>🏇 Horse Racing Game 🏇</h1>
+            <div class="player-info">
+                <div class="player-details">
+                    <span>Player: </span>
+                    <span id="name"></span>
+                </div>
+                <br>
+                <div class="score-details">
+                    <span>Score: </span>
+                    <span id="score"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start">Start Race</button>
+            <p class="instruction">Select a horse and click Start to begin the race!</p>
+        </div>
+
+        <!-- <div>
+            <button id="start" class="button-41" role="button">Start Game</button>
+        </div> -->
+        <div id="grassArea">
+            <div id="roads">
+                <div class="road">
+                    <div class="horseDiv">
+                        <img class="horseImg1" src="./images/horse10-removebg-preview.png" alt="">
+                        <img class="horseImg2" src="./images/horse1-removebg-preview.png" alt="">
+                    </div>
+                    <img class="endLine" src="./images/end-line3.png" alt="">
+                </div>
+                <div class="road">
+                    <div class="horseDiv">
+                        <img class="horseImg1" src="./images/horse20-removebg-preview.png" alt="">
+                        <img class="horseImg2" src="./images/horse2-removebg-preview.png" alt="">
+                    </div>
+                    <img class="endLine" src="./images/end-line3.png" alt="">
+                </div>
+                <div class="road">
+                    <div class="horseDiv">
+                        <img class="horseImg1" src="./images/horse30-removebg-preview.png" alt="">
+                        <img class="horseImg2" src="./images/horse3-removebg-preview.png" alt="">
+                    </div>
+                    <img class="endLine" src="./images/end-line3.png" alt="">
+                </div>
+                <div class="road">
+                    <div class="horseDiv">
+                        <img class="horseImg1" src="./images/horse40-removebg-preview.png" alt="">
+                        <img class="horseImg2" src="./images/horse4-removebg-preview.png" alt="">
+                    </div>
+                    <img class="endLine" src="./images/end-line3.png" alt="">
+                </div>
+                <div class="road">
+                    <div class="horseDiv">
+                        <img class="horseImg1" src="./images/horse50-removebg-preview.png" alt="">
+                        <img class="horseImg2" src="./images/horse5-removebg-preview.png" alt="">
+                    </div>
+                    <img class="endLine" src="./images/end-line3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <audio id="winSound" src="/audios/winning2.mp3" preload="auto"></audio>
+
+    
+    <script src="horsesGame.js"></script>
+</body>
+</html>
